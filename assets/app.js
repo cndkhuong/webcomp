@@ -11,14 +11,14 @@ function drop(ev) {
 
 function init(){
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://raw.githubusercontent.com/TheodoreGC/Trello-like/master/materials/db.json", true);
+    xhr.open("GET", "https://raw.githubusercontent.com/cndkhuong/webcomp/master/db.json", true);
     xhr.onload = function(){
         var response = JSON.parse(xhr.responseText);
         var data = response.cards;
         data.forEach(element => {
             let Drawer = customElements.get('task-todo');
             let drawer = new Drawer();
-            drawer.render("pending", element.title, element.owner, element.date,  element.description);
+            drawer.render("pending", element.title, element.author, element.date,  element.description);
         });
     };
     xhr.send();
