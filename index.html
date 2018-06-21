@@ -1,0 +1,59 @@
+<html>
+        <head>
+            <title>to-do List</title>
+            <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+            <link rel="stylesheet" href="assets/todo.css" />
+            <script src="lib/custom-elements.min.js"></script>
+            <script src="assets/app.js">
+            </script>
+        </head>
+        <body class="well">
+            <div id="container">
+
+                <div id="header"> To Do List </div> 
+                   
+                   <div class="taskbox">
+                        <div id="clpen" class="headertask"><h3>Pending</h3></div>
+                        <div class="task-list task-container" id="pending" id="inProgress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                
+                <div class="taskbox">
+                    <div id="clpro" class="headertask"><h3>In Progress</h3></div>
+                    <div class="task-list task-container" id="inProgress" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                
+
+
+                <div class="taskbox">
+                    <div id="clcom" class="headertask"><h3>Completed</h3></div>
+                    <div class="task-list task-container" id="completed" ondrop="drop(event)" ondragover="allowDrop(event)"></div>       
+                </div>
+                
+
+                <div class="task-list">
+                    <h3>Task Details</h3>
+                    <form id="todo-form">
+                        <input type="text" placeholder="Title" />
+                        <input type="text" placeholder="Owner" />
+                        <textarea placeholder="Description"></textarea>
+                        <input type="date" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
+                        <input type="hidden" id="id"/>
+                        <input type="hidden" id="parentid"/>
+                        <input type="button" class="btn btn-primary" value="Add" onclick="add()" />
+                        <input type="button" class="btn btn-warning" value="Update" onclick="edit()" />
+                        <input type="button" class="btn btn-danger" value="Delete" onclick="remove()" />
+                        <input type="reset" class="btn btn-info" value="Clear Data" />
+                    </form>
+                    <div id="delete-div">
+                        Drag Here to Delete
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <script type="text/javascript" src="assets/component.js"></script>
+                <script>
+                    init();
+                </script>
+            </div>
+        </body>
+</html>

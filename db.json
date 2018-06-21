@@ -1,0 +1,49 @@
+{
+  "columns": [
+    {
+      "id": 1,
+      "title": "Column 1"
+    },
+    {
+      "id": 2,
+      "title": "Column 2"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "title": "Card 1",
+      "author": "PM",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "date": "06/22/2018"
+    },
+    {
+      "id": 2,
+      "title": "Card 2",
+        "author": "PM",
+      "description": "Quisque et pellentesque sem.",
+      "date": "06/22/2018"
+    },
+    {
+      "id": 3,
+       "author": "PM",
+      "title": "Card 3",
+      "description": "Nulla porttitor erat a sollicitudin volutpat.",
+      "date": "06/22/2018"
+    },
+    {
+      "id": 4,
+      "title": "Card 4",
+      "author": "PM",
+      "description": "Quisque id scelerisque felis, sit amet scelerisque nunc.",
+      "date": "06/22/2018"
+    },
+    {
+      "id": 5,
+      "title": "Card 5",
+      "author": "PM",
+      "description": "Suspendisse posuere ipsum at dui lacinia, ut faucibus lectus mollis.",
+      "date": "06/22/2018"
+    }
+  ]
+}
